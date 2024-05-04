@@ -8,6 +8,10 @@
     padding: 1%;
 }
 
+.navbar{
+    display: block;
+}
+
 nav{
     width: 73%;
     padding: 1%;
