@@ -21,6 +21,8 @@ ul{
     width: 50%;
     margin-left: auto;
     padding: 8px;
+    display: inline-block;
+    vertical-align: top;
 }
 
 img{
@@ -41,8 +43,22 @@ footer{
     background-color: #373738;
 }
 
-ul{
-    display: inline-block;
-    vertical-align: top;
-    padding: 25px;
+.flexContainer{
+    display: flex;
+    flex-direction: row;
+
+}
+.item1{
+    grid-area: myArea;
+}
+.workGrid{
+    display: grid;
+    grid-template-areas: 'myArea myArea myArea myArea';
+    grid-template-rows: 50% 50%;
+}
+
+@media only screen and (max-width:600){
+    .flexContainer{
+        flex-direction: column;
+    }
 }
